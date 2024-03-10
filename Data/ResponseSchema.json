@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "patients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "string"
+          },
+          "height": {
+            "type": "string"
+          },
+          "bloodPressure": {
+            "type": "string"
+          },
+          "bloodOxygenLevel": {
+            "type": "string"
+          },
+          "heartRate": {
+            "type": "string"
+          },
+          "medicationPrescription": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["name", "weight", "height", "bloodPressure", "bloodOxygenLevel", "heartRate", "medicationPrescription"]
+      }
+    }
+  },
+  "required": ["patients"]
+}
